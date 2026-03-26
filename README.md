@@ -94,25 +94,3 @@ python manage.py createsuperuser
 python manage.py makemigrations
 python manage.py migrate
 ```
-
-## 推到 GitHub
-
-先在 GitHub 建立一個空的 repository，例如 `fansinterface-report`，不要先勾選 README、`.gitignore` 或 license。
-
-然後在本機執行：
-
-```bash
-cd /Users/chenshuzhen/workspace/finalreport
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/你的帳號/fansinterface-report.git
-git push -u origin main
-```
-
-## 注意事項
-
-- `db.sqlite3` 是本機資料庫，已在 `.gitignore` 內。
-- `media/` 是上傳資料夾，已在 `.gitignore` 內。
-- 外層虛擬環境 `VENV/` 不應推到 GitHub。
